@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Environmental Monitoring App - Solar Irradiance</title>
@@ -26,7 +26,9 @@
         <input type="date" name="date" id="date">
         <input type="submit" value="Get Data">
     </form>
-    <div id="result"></div>
+    <div id="result">
+        <p th:text="${solarIrradiance}"></p>
+    </div>
 </main>
 </body>
 </html>
